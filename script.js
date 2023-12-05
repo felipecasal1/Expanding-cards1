@@ -13,9 +13,26 @@ function removeActiveClasses() {
     })
 }
 
-const photosH3 = document.querySelector(".photos")
+const photosH3 = document.querySelectorAll(".photos")
 
-    photosH3.addEventListener('mouseover', () => {
-        photosH3.classList.add('active')
+photosH3.forEach(photos => {
+    photos.addEventListener('mouseover', () => {
+        removeActiveClassesPhotos()
+        photos.classList.add("view")
     })
+})
 
+photosH3.forEach(photos =>{
+    photos.addEventListener("mouseout", () => {
+          photos.classList.remove("view")
+    })
+})
+
+  function removeActiveClassesPhotos(){
+    photosH3.forEach(photos =>{
+
+        photos.classList.remove("view")
+    })
+  }
+
+  

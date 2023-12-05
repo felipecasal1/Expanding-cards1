@@ -12,3 +12,10 @@ function removeActiveClasses() {
         panel.classList.remove('active')
     })
 }
+
+const photosH3 = document.querySelector(".photos")
+
+    photosH3.addEventListener('mouseover', () => {
+        photosH3.classList.add('active')
+    })
+

@@ -83,3 +83,41 @@ body section {
    margin-top: 76vh;
  }
  
+
+
+
+ /*               Css morePhotos                */
+
+
+
+
+ .container-photos{
+   display: flex;
+   flex-direction: row;
+   align-items: start;
+  
+   justify-content: start;
+ }
+ .photos{
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   height: 40vh ;
+   width: 40vh;
+   margin: 10px;
+ }
+ .photos h3{
+   color: black;
+   font-size: 25px;
+   margin-top:80%;
+   text-align: center;
+   background-color: white;
+   width: 50%;
+   margin-left:20%;
+  border-radius: 20px;
+  opacity: 0;
+ }
+ .photos.active h3{
+   opacity: 1;
+   transition: opacity 0.1s ease-in 0.2s;
+ }

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container-header{
+   font-family: 'Muli', sans-serif;  
+   display: flex;
+   justify-content: center;
+}
+.container-list{
+   display: flex;
+   justify-content: center; 
+}
+
+header ul{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: grey;
+   border-radius: 30px;
+   margin: 40px;
+   width: 30vh;
+   height: 10vh;
+ 
+}
+header ul:hover{
+   background-color: lightblue;
+}
+
+header a{
+   margin: 30px;
+   text-decoration: none;
+   color: black;
+   width: 30vh;
+   font-size: x-large;
+   
+}
+
+body section {
+   font-family: 'Muli', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 150vh;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 20px;
+  color: white;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  -webkit-transition: all 700ms ease-in;
+
+}
+.panel h3{
+   font-size: 24px;
+   position:relative;
+   bottom: 20px;
+   left: 20px;
+   margin: 0;
+   opacity: 0;
+ 
+}
+.panel.active {
+  width: 200vh;
+  animation-timing-function: linear;
+}
+.panel.active h3 {
+   opacity: 1;
+   transition: opacity 0.3s ease-in 0.4s;
+   margin-top: 76vh;
+ }
+ 
